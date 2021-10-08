@@ -119,6 +119,16 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * Korrelationsverfahren (Machine Learning)
 
 # IP
+> Prefix (Netz) (The ammount of network bits)
+
+## Rules of Berger ipv4
+* ip v4 hat 32 bits
+* besteht aus netzwer und host bits
+* prefixlenght ist die anzahl der netzwerkbits, der rest sind host
+* Subnetmask: alle netzwerkbits sind 1, alle host bits sind 0
+* netzadresse alle hostbits 0, broadcast alles hostbits 1
+* alles andere sind gültige ip adressen 
+  
 ## IPv4 vs 6
 * 32 bits per address
 * 2^32 addresses
@@ -133,17 +143,9 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * 8 blocks (16 bits per block)
 * 0000:0000:0000:0000:0000:0000:0000:0000 - ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
-# Rules of Berger ipv4
-* ip v4 hat 32 bits
-* besteht aus netzwer und host bits
-* prefixlenght ist die anzahl der netzwerkbits, der rest sind host
-* Subnetmask: alle netzwerkbits sind 1, alle host bits sind 0
-* netzadresse alle hostbits 0, broadcast alles hostbits 1
-* alles andere sind gültige ip adressen 
 
 # IPv6
-
-## Addresses
+## Addresse Spaces
 * Global Unicast    2000::/3    publicly routable, prefix /2 oder /3, ersten 3 bits identifizieren global unicast address
 * Unique local      FC00::/7    Routable im LAN, FC00:: oder FD00::
 * Link local        FE80::/10   Not routable, prefix FE , kommunizieren nur im einen network
@@ -151,6 +153,19 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * Anycast           2000::/3    Shared address, mehrere Hosts können den haben, Data wird zum nähersten geschickt, keine prefix
 * global prefix minimum 48-bits lange, bekommt man vom ISP
 
-# Prefix (Netz)
-The ammount of network bits
+## IPv6 Address shorting
+* leading 0 not needed
+* blocks of only 0 become :: (only once)
+* 2001:1234:0ACD:0000:0000:0000:0000:0003 -> 2001:1234:ACD::3
+
+
+
+
+# Protocolls
+## Active Directory
+* windows server
+* add windows feature "Remote Server Administrator Tools" and "AD DS Tools"
+* install DNS server
+* create users and groups 
+* mange folders and access
 
