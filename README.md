@@ -131,7 +131,7 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * 2^128 addresses
 * hexadecimal anotation
 * 8 blocks (16 bits per block)
-* 0000:0000:0000:0000:0000:0000:00000:00000 - fffff:fffff:fffff:fffff:fffff:fffff:fffff:fffff
+* 0000:0000:0000:0000:0000:0000:0000:0000 - ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 # Rules of Berger ipv4
 * ip v4 hat 32 bits
@@ -144,6 +144,14 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 # IPv6
 * link local addresses fe80::/10
 * hat kein Broadcast, sondern Multicast
+
+## Addresses
+* Global Unicast    2000::/3    publicly routable, prefix /2 oder /3, ersten 3 bits identifizieren global unicast address
+* Unique local      FC00::/7    Routable im LAN, FC00:: oder FD00::
+* Link local        FE80::/10   Not routable, prefix FE , kommunizieren nur im einen network
+* Multicast         FF00::/8    addresses for groups, prefix immer FF, vergleichbar mit Broadcast addresse die an alle schickt, nur stattdessen eine gruppe
+* Anycast           2000::/3    Shared address, mehrere Hosts können den haben, Data wird zum nähersten geschickt, keine prefix
+* global prefix minimum 48-bits lange, bekommt man vom ISP
 
 # Prefix (Netz)
 The ammount of network bits
