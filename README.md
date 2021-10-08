@@ -142,8 +142,6 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * alles andere sind gültige ip adressen 
 
 # IPv6
-* link local addresses fe80::/10
-* hat kein Broadcast, sondern Multicast
 
 ## Addresses
 * Global Unicast    2000::/3    publicly routable, prefix /2 oder /3, ersten 3 bits identifizieren global unicast address
