@@ -118,7 +118,12 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * anomalie Verfahren (sachen verhalten sich nicht normal)
 * Korrelationsverfahren (Machine Learning)
 
+# Internet
+IETF set standard RFCs: TCP, UDP, OSPF and so on
+
 # IP
+> RFC-791
+
 > Prefix (Netz) (The ammount of network bits)
 
 ## Multicast
@@ -176,6 +181,14 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * leading 0 not needed
 * blocks of only 0 become :: (only once)
 * 2001:1234:0ACD:0000:0000:0000:0000:0003 -> 2001:1234:ACD::3
+
+
+## Localhost vs Loopback
+![localhost](localnet.jpg)
+* local host is always 127.0.0.1
+* loopback can be every address
+* loopback is used for network administrating
+* extern ssh access an loopback
 
 
 # EUI 64
