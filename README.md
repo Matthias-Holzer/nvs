@@ -121,6 +121,22 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 # IP
 > Prefix (Netz) (The ammount of network bits)
 
+## Multicast
+![multicast](multicast.jpg)
+* FE02::1 -> any router on the network
+* FE02::5 -> any OSPF router
+* ....
+
+## IP Classes
+![classes](classes.jpg)
+* A,B,C -> Unicast
+* D -> Multicast
+* E für egal (experimental)
+* A has 8 Network bits /8
+* B has 16 Network bits /16
+* etc.
+* 
+
 ## Rules of Berger ipv4
 * ip v4 hat 32 bits
 * besteht aus netzwer und host bits
@@ -152,12 +168,22 @@ Vorher festgelegte Einschrenkungen, ACL die eingespielt werden
 * Multicast         FF00::/8    addresses for groups, prefix immer FF, vergleichbar mit Broadcast addresse die an alle schickt, nur stattdessen eine gruppe
 * Anycast           2000::/3    Shared address, mehrere Hosts können den haben, Data wird zum nähersten geschickt, keine prefix
 * global prefix minimum 48-bits lange, bekommt man vom ISP
-
+* loopback ::1 /128
+* localhost ::1 /128
+  
+  
 ## IPv6 Address shorting
 * leading 0 not needed
 * blocks of only 0 become :: (only once)
 * 2001:1234:0ACD:0000:0000:0000:0000:0003 -> 2001:1234:ACD::3
 
+
+# EUI 64
+![eui64](eui64.png)
+* making the mac address to the IP address
+* cutting the mac address in half
+* add FF:FE in the middle
+* flipping the sevent bit
 
 
 
