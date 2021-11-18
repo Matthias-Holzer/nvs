@@ -8,3 +8,4 @@ Wer mitschreiben will oder Fehler endeckt, bitte einfach melden, dann muss ich d
 ## Stoff für den Berger Test
 * alles im Addresing Ordner
 * alles im Directory Service Ordner
+* ARP, TCP, SLAAC und VLAN füg ich noch hinzu
